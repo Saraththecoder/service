@@ -82,7 +82,7 @@ const Footer = ({ onBookClick, onPageChange }) => {
 
             {/* Direct WhatsApp (Vibrant Green) */}
             <motion.a
-              href="https://wa.me/919701308392?text=Hi%20Oryon%20Home%20Services,%20I%20need%20doorstep%20appliance%20service."
+              href="https://wa.me/919701308392?text=Hi%20Door%20Step%20Service,%20I%20need%20doorstep%20appliance%20service."
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-5 rounded-2xl text-base font-extrabold text-white bg-emerald-600 hover:bg-emerald-500 flex items-center justify-center gap-3 transition-all duration-300 shadow-md shadow-emerald-600/10"
@@ -123,16 +123,16 @@ const Footer = ({ onBookClick, onPageChange }) => {
           {/* Logo Brand Header (Slate & Blue) */}
           <div className="flex flex-col items-center gap-2">
             <div className="relative flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-tr from-[#1565FF] to-[#4A90FF] p-[1px] shadow-sm">
-              <div className="w-full h-full bg-white rounded-xl flex items-center justify-center">
-                <ShieldCheck className="w-6 h-6 text-[#1565FF]" />
+              <div className="w-full h-full bg-white rounded-xl flex items-center justify-center p-1.5">
+                <img src="/logo.png" alt="Door Step Service Logo" className="w-full h-full object-contain" />
               </div>
             </div>
-            <div className="flex flex-col items-center mt-2 text-left">
+            <div className="flex flex-col items-center mt-2 text-center">
               <span className="font-heading font-extrabold text-2xl tracking-widest text-slate-900">
-                ORYON
+                DOOR STEP
               </span>
               <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-[#4A90FF] mt-0.5">
-                Home Services Nellore
+                SERVICE NELLORE
               </span>
             </div>
           </div>
@@ -159,7 +159,7 @@ const Footer = ({ onBookClick, onPageChange }) => {
 
             {/* WhatsApp Chat (Green) */}
             <motion.a
-              href="https://wa.me/919701308392?text=Hi%20Oryon%20Home%20Services"
+              href="https://wa.me/919701308392?text=Hi%20Door%20Step%20Service"
               target="_blank"
               rel="noopener noreferrer"
               className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-slate-50 border border-slate-200 hover:border-emerald-500 flex flex-col items-center justify-center text-emerald-600 hover:text-white hover:bg-emerald-600 transition-all duration-300 shadow-sm group"
@@ -189,7 +189,7 @@ const Footer = ({ onBookClick, onPageChange }) => {
 
             {/* Email Support (Cyan) */}
             <motion.a
-              href="mailto:support@oryonhomeservices.com"
+              href="mailto:support@doorstepservice.in"
               className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-slate-50 border border-slate-200 hover:border-cyan-500 flex flex-col items-center justify-center text-cyan-600 hover:text-white hover:bg-cyan-600 transition-all duration-300 shadow-sm group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -230,7 +230,7 @@ const Footer = ({ onBookClick, onPageChange }) => {
           {/* Bottom Copyright bar */}
           <div className="pt-8 mt-8 border-t border-slate-100 w-full flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
             <p>
-              &copy; {currentYear} ORYON HOME SERVICES. All rights reserved. Registered under local Nellore service bounds.
+              &copy; {currentYear} DOOR STEP SERVICE. All rights reserved. Registered under local Nellore service bounds.
             </p>
             <div className="flex items-center gap-1.5">
               <span>Made with</span>

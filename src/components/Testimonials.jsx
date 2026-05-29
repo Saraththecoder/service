@@ -28,7 +28,7 @@ const Testimonials = () => {
       location: 'Magunta Layout, Nellore',
       service: 'Double Door Refrigerator Cooling Fix',
       rating: 5,
-      comment: 'Excellent and highly skilled team. Our double-door refrigerator stopped cooling suddenly on a hot afternoon. Called Oryon and they dispatched a technician in no time. He replaced the faulty defrost thermostat instantly. Transparent upfront pricing.',
+      comment: 'Excellent and highly skilled team. Our double-door refrigerator stopped cooling suddenly on a hot afternoon. Called Door Step Service and they dispatched a technician in no time. He replaced the faulty defrost thermostat instantly. Transparent upfront pricing.',
       date: '2 weeks ago'
     },
     {
@@ -109,7 +109,7 @@ const Testimonials = () => {
             What Our Nellore Clients Say
           </motion.h2>
           <p className="text-slate-500 text-sm sm:text-base mt-4 max-w-xl mx-auto">
-            Read real feedback from homeowners, doctors, and businesses in Nellore who choose Oryon for doorstep appliance repair.
+            Read real feedback from homeowners, doctors, and businesses in Nellore who choose Door Step Service for doorstep appliance repair.
           </p>
         </div>
 

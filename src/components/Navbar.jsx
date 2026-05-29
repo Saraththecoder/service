@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone, ShieldCheck } from 'lucide-react';
+import { Menu, X, Phone, ShieldCheck, Sparkles } from 'lucide-react';
 
 const Navbar = ({ currentPage, onPageChange }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,28 +22,31 @@ const Navbar = ({ currentPage, onPageChange }) => {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-45 bg-white/80 backdrop-blur-md border-b border-slate-200/80 py-3.5 shadow-sm"
+        className="fixed top-0 left-0 right-0 z-45 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Global Announcement Banner (First Element on Screen) */}
+        <div className="w-full bg-gradient-to-r from-[#1565FF] to-[#4A90FF] py-2.5 px-4 text-center text-white text-[10px] sm:text-xs font-extrabold tracking-widest uppercase flex items-center justify-center gap-2 shadow-sm relative z-50">
+          <Sparkles className="w-3.5 h-3.5 animate-pulse shrink-0 text-blue-100" />
+          <span>⚡ Same-Day Doorstep Appliance Repair in Nellore — Call 9701308392</span>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5">
           <div className="flex items-center justify-between h-16">
             
-            {/* Logo Brand (Slate & Blue) */}
+            {/* Logo Brand (Door Step Service) */}
             <a
               href="#home"
               onClick={(e) => handleLinkClick(e, 'home')}
-              className="flex items-center gap-2 group cursor-pointer"
+              className="flex items-center gap-2.5 group cursor-pointer"
             >
-              <div className="relative flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-tr from-[#1565FF] to-[#4A90FF] p-[1px] shadow-sm">
-                <div className="w-full h-full bg-white rounded-lg flex items-center justify-center">
-                  <ShieldCheck className="w-5.5 h-5.5 text-[#1565FF]" />
-                </div>
+              <div className="relative flex items-center justify-center w-10 h-10 rounded-lg overflow-hidden border border-slate-200 bg-white p-[2px] shadow-sm group-hover:border-[#1565FF] transition-colors duration-300">
+                <img src="/logo.png" alt="Door Step Service Logo" className="w-full h-full object-contain" />
               </div>
               <div className="flex flex-col text-left">
-                <span className="font-heading font-extrabold text-xl tracking-wider text-slate-900 group-hover:text-[#1565FF] transition-colors duration-300">
-                  ORYON
+                <span className="font-heading font-extrabold text-lg tracking-wider text-slate-900 group-hover:text-[#1565FF] transition-colors duration-300">
+                  DOOR STEP
                 </span>
-                <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-[#4A90FF] -mt-1">
-                  Home Services
+                <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-[#4A90FF] -mt-1.5">
+                  SERVICE
                 </span>
               </div>
             </a>

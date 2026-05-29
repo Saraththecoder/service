@@ -16,7 +16,7 @@ const Faq = () => {
     },
     {
       question: 'Are the replacement spare parts genuine? Do they carry a warranty?',
-      answer: 'We never compromise on product integrity. We utilize only 100% authentic, manufacturer-certified spare parts accompanied by direct warranties. Additionally, Oryon Home Services provides a robust 30-day structural guarantee on all labor and repair workmanship.'
+      answer: 'We never compromise on product integrity. We utilize only 100% authentic, manufacturer-certified spare parts accompanied by direct warranties. Additionally, Door Step Service provides a robust 30-day structural guarantee on all labor and repair workmanship.'
     },
     {
       question: 'Which specific locations and surrounding areas in Nellore do you service?',
@@ -24,7 +24,7 @@ const Faq = () => {
     },
     {
       question: 'Are your field technician staff background-checked and certified?',
-      answer: 'Your safety and comfort are paramount. Every field technician in the Oryon team undergoes a stringent multi-point background check and is fully certified, possessing a minimum of 5 years of brand-specific experience in diagnosing complex high-end appliances.'
+      answer: 'Your safety and comfort are paramount. Every field technician in the Door Step Service team undergoes a stringent multi-point background check and is fully certified, possessing a minimum of 5 years of brand-specific experience in diagnosing complex high-end appliances.'
     },
     {
       question: 'How do I schedule an emergency or late-night service request?',

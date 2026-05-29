@@ -53,7 +53,7 @@ const MapsEmbed = () => {
               <div>
                 <h4 className="text-slate-800 text-sm font-bold font-heading">Dispatch Hub Address</h4>
                 <p className="text-slate-500 text-xs sm:text-sm mt-2 leading-relaxed font-normal">
-                  ORYON HOME SERVICES<br />
+                  DOOR STEP SERVICE<br />
                   Haranathapuram Main Road, near Children's Park,<br />
                   Nellore, Andhra Pradesh 524003, India
                 </p>
@@ -119,7 +119,7 @@ const MapsEmbed = () => {
             {/* Natural Legible Map without grayscale filter */}
             <div className="w-full h-full rounded-2xl overflow-hidden relative border border-slate-100">
               <iframe
-                title="Oryon Home Services Area Map Nellore"
+                title="Door Step Service Area Map Nellore"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123843.5186043125!2d79.91986424368945!3d14.444747738221665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4cf230782e4b3d%3A0xe54e6022e03943a5!2sNellore%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1717013893041!5m2!1sen!2sin"
                 className="w-full h-full min-h-[360px] border-0 select-none"
                 allowFullScreen=""

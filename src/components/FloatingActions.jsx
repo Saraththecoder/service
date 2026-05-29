@@ -10,7 +10,7 @@ const FloatingActions = () => {
       if (window.pageYOffset > 300) {
         setIsVisible(true);
       } else {
-        isVisible(false);
+        setIsVisible(false);
       }
     };
     window.addEventListener('scroll', toggleVisibility);
@@ -45,7 +45,7 @@ const FloatingActions = () => {
 
       {/* WhatsApp Button */}
       <motion.a
-        href="https://wa.me/919701308392?text=Hi%20Oryon%20Home%20Services,%20I%20would%20like%20to%20book%20a%20repair%20service."
+        href="https://wa.me/919701308392?text=Hi%20Door%20Step%20Service,%20I%20would%20like%20to%20book%20a%20repair%20service."
         target="_blank"
         rel="noopener noreferrer"
         className="relative w-14 h-14 rounded-full flex items-center justify-center bg-emerald-600 text-white shadow-[0_0_20px_rgba(16,185,129,0.4)] group active:scale-95 transition-transform"
