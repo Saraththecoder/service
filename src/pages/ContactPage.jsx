@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import MapsEmbed from '../components/MapsEmbed';
 
 const ContactPage = () => {
@@ -44,27 +43,25 @@ const ContactPage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Contact Us & Dispatch Hub Location | Door Step Service Nellore</title>
-        <meta 
-          name="description" 
-          content="Get in touch with Door Step Service in Nellore. View our dispatch address near Haranathapuram, call our emergency 24-hr helpline 9701308392, or request service vans." 
-        />
-        <meta name="keywords" content="contact door step service nellore, ac repair phone number nellore, fridge technician contact nellore, doorstep service dispatch office" />
-        <link rel="canonical" href="https://doorstepsservices.com/contact" />
-        <meta name="robots" content="index, follow" />
+      <title>Contact Us & Dispatch Hub Location | Door Step Service Nellore</title>
+      <meta 
+        name="description" 
+        content="Get in touch with Door Step Service in Nellore. View our dispatch address near Haranathapuram, call our emergency 24-hr helpline 9701308392, or request service vans." 
+      />
+      <meta name="keywords" content="contact door step service nellore, ac repair phone number nellore, fridge technician contact nellore, doorstep service dispatch office" />
+      <link rel="canonical" href="https://doorstepsservices.com/contact" />
+      <meta name="robots" content="index, follow" />
 
-        {/* OG Tags */}
-        <meta property="og:title" content="Contact Us & Dispatch Hub Location | Door Step Service Nellore" />
-        <meta property="og:description" content="Reach our doorstep repair dispatch center in Nellore. Active call/WhatsApp support (9701308392) and 24-hr emergency response services." />
-        <meta property="og:url" content="https://doorstepsservices.com/contact" />
-        <meta property="og:type" content="website" />
+      {/* OG Tags */}
+      <meta property="og:title" content="Contact Us & Dispatch Hub Location | Door Step Service Nellore" />
+      <meta property="og:description" content="Reach our doorstep repair dispatch center in Nellore. Active call/WhatsApp support (9701308392) and 24-hr emergency response services." />
+      <meta property="og:url" content="https://doorstepsservices.com/contact" />
+      <meta property="og:type" content="website" />
 
-        {/* Dynamic JSON-LD Schema Markup */}
-        <script type="application/ld+json">
-          {JSON.stringify(schemaData)}
-        </script>
-      </Helmet>
+      {/* Dynamic JSON-LD Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify(schemaData)}
+      </script>
 
       <div>
         <MapsEmbed />

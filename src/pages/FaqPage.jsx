@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import Faq from '../components/Faq';
 import Testimonials from '../components/Testimonials';
 
@@ -46,27 +45,25 @@ const FaqPage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Frequently Asked Questions | Door Step Service Nellore</title>
-        <meta 
-          name="description" 
-          content="Find quick answers about our doorstep repair services, pricing, warranty coverage, response times, and technician certifications in Nellore." 
-        />
-        <meta name="keywords" content="nellore appliance repair faq, door step service cost, ac repair warranty nellore, doorstep dispatch pricing AP" />
-        <link rel="canonical" href="https://doorstepsservices.com/faqs" />
-        <meta name="robots" content="index, follow" />
+      <title>Frequently Asked Questions | Door Step Service Nellore</title>
+      <meta 
+        name="description" 
+        content="Find quick answers about our doorstep repair services, pricing, warranty coverage, response times, and technician certifications in Nellore." 
+      />
+      <meta name="keywords" content="nellore appliance repair faq, door step service cost, ac repair warranty nellore, doorstep dispatch pricing AP" />
+      <link rel="canonical" href="https://doorstepsservices.com/faqs" />
+      <meta name="robots" content="index, follow" />
 
-        {/* OG Tags */}
-        <meta property="og:title" content="Frequently Asked Questions | Door Step Service Nellore" />
-        <meta property="og:description" content="Got queries about doorstep appliance repairs in Nellore? Learn about diagnostic fees, warranty policies, certified parts, and response times." />
-        <meta property="og:url" content="https://doorstepsservices.com/faqs" />
-        <meta property="og:type" content="website" />
+      {/* OG Tags */}
+      <meta property="og:title" content="Frequently Asked Questions | Door Step Service Nellore" />
+      <meta property="og:description" content="Got queries about doorstep appliance repairs in Nellore? Learn about diagnostic fees, warranty policies, certified parts, and response times." />
+      <meta property="og:url" content="https://doorstepsservices.com/faqs" />
+      <meta property="og:type" content="website" />
 
-        {/* Dynamic JSON-LD Schema Markup */}
-        <script type="application/ld+json">
-          {JSON.stringify(schemaData)}
-        </script>
-      </Helmet>
+      {/* Dynamic JSON-LD Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify(schemaData)}
+      </script>
 
       <div>
         <Faq />

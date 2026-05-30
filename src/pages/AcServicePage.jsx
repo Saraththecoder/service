@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Check, Wind, Clock, ShieldCheck, Tag, HelpCircle, Phone } from 'lucide-react';
@@ -62,28 +61,26 @@ const AcServicePage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Best AC Service & Repair in Nellore | Door Step Service</title>
-        <meta 
-          name="description" 
-          content="Get the best AC service in Nellore. Fast doorstep Split/Window air conditioner repair, deep foam jet cleaning, compressor replacement, gas charging & PCB servicing. Starts at ₹299." 
-        />
-        <meta name="keywords" content="best ac service in nellore, ac repair in nellore, ac gas filling nellore, split ac installation nellore, window ac service nellore, ac technician nellore" />
-        <link rel="canonical" href="https://doorstepsservices.com/services/ac-repair-nellore" />
-        <meta name="robots" content="index, follow" />
+      <title>Best AC Service & Repair in Nellore | Door Step Service</title>
+      <meta 
+        name="description" 
+        content="Get the best AC service in Nellore. Fast doorstep Split/Window air conditioner repair, deep foam jet cleaning, compressor replacement, gas charging & PCB servicing. Starts at ₹299." 
+      />
+      <meta name="keywords" content="best ac service in nellore, ac repair in nellore, ac gas filling nellore, split ac installation nellore, window ac service nellore, ac technician nellore" />
+      <link rel="canonical" href="https://doorstepsservices.com/services/ac-repair-nellore" />
+      <meta name="robots" content="index, follow" />
 
-        {/* OG Tags */}
-        <meta property="og:title" content="Best AC Service & Repair in Nellore | Door Step Service" />
-        <meta property="og:description" content="Struggling with cooling? Get 90-minute doorstep AC repair in Nellore by certified field mechanics. Splits, Windows, gas charging, PCB fixes. Starts ₹299." />
-        <meta property="og:url" content="https://doorstepsservices.com/services/ac-repair-nellore" />
-        <meta property="og:image" content="https://nelloredoorstepservice.com/ac_service.png" />
-        <meta property="og:type" content="website" />
+      {/* OG Tags */}
+      <meta property="og:title" content="Best AC Service & Repair in Nellore | Door Step Service" />
+      <meta property="og:description" content="Struggling with cooling? Get 90-minute doorstep AC repair in Nellore by certified field mechanics. Splits, Windows, gas charging, PCB fixes. Starts ₹299." />
+      <meta property="og:url" content="https://doorstepsservices.com/services/ac-repair-nellore" />
+      <meta property="og:image" content="https://nelloredoorstepservice.com/ac_service.png" />
+      <meta property="og:type" content="website" />
 
-        {/* Dynamic Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify(schemaData)}
-        </script>
-      </Helmet>
+      {/* Dynamic Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify(schemaData)}
+      </script>
 
       <div className="bg-slate-50 min-h-screen text-slate-900">
         
