@@ -15,19 +15,19 @@ const WasherServicePage = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://nelloredoorstepservice.com/"
+          "item": "https://doorstepsservices.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Services",
-          "item": "https://nelloredoorstepservice.com/services"
+          "item": "https://doorstepsservices.com/services"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Washing Machine Repair",
-          "item": "https://nelloredoorstepservice.com/services/washing-machine-repair-nellore"
+          "item": "https://doorstepsservices.com/services/washing-machine-repair-nellore"
         }
       ]
     },
@@ -69,13 +69,13 @@ const WasherServicePage = () => {
           content="Get the best washing machine service in Nellore. Fast doorstep repair for Front load, Top load, and Semi-automatic washers. Drum repairs, extreme noise fixes, and drain pumps. Starts ₹349." 
         />
         <meta name="keywords" content="best washing machine service, washing machine repair in nellore, lg washing machine service nellore, samsung washer repair nellore, washing machine technician, drum repair" />
-        <link rel="canonical" href="https://nelloredoorstepservice.com/services/washing-machine-repair-nellore" />
+        <link rel="canonical" href="https://doorstepsservices.com/services/washing-machine-repair-nellore" />
         <meta name="robots" content="index, follow" />
 
         {/* OG Tags */}
         <meta property="og:title" content="Best Washing Machine Service & Repair in Nellore | Door Step Service" />
         <meta property="og:description" content="Spin cycle issues or extreme noise? Get same-day doorstep washing machine repair in Nellore by certified field mechanics. Original motors, belts, pumps, suspension. Starts ₹349." />
-        <meta property="og:url" content="https://nelloredoorstepservice.com/services/washing-machine-repair-nellore" />
+        <meta property="og:url" content="https://doorstepsservices.com/services/washing-machine-repair-nellore" />
         <meta property="og:image" content="https://nelloredoorstepservice.com/washing_machine_service.png" />
         <meta property="og:type" content="website" />
 

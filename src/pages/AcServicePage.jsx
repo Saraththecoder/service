@@ -15,19 +15,19 @@ const AcServicePage = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://nelloredoorstepservice.com/"
+          "item": "https://doorstepsservices.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Services",
-          "item": "https://nelloredoorstepservice.com/services"
+          "item": "https://doorstepsservices.com/services"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "AC Service & Repair",
-          "item": "https://nelloredoorstepservice.com/services/ac-repair-nellore"
+          "item": "https://doorstepsservices.com/services/ac-repair-nellore"
         }
       ]
     },
@@ -69,13 +69,13 @@ const AcServicePage = () => {
           content="Get the best AC service in Nellore. Fast doorstep Split/Window air conditioner repair, deep foam jet cleaning, compressor replacement, gas charging & PCB servicing. Starts at ₹299." 
         />
         <meta name="keywords" content="best ac service in nellore, ac repair in nellore, ac gas filling nellore, split ac installation nellore, window ac service nellore, ac technician nellore" />
-        <link rel="canonical" href="https://nelloredoorstepservice.com/services/ac-repair-nellore" />
+        <link rel="canonical" href="https://doorstepsservices.com/services/ac-repair-nellore" />
         <meta name="robots" content="index, follow" />
 
         {/* OG Tags */}
         <meta property="og:title" content="Best AC Service & Repair in Nellore | Door Step Service" />
         <meta property="og:description" content="Struggling with cooling? Get 90-minute doorstep AC repair in Nellore by certified field mechanics. Splits, Windows, gas charging, PCB fixes. Starts ₹299." />
-        <meta property="og:url" content="https://nelloredoorstepservice.com/services/ac-repair-nellore" />
+        <meta property="og:url" content="https://doorstepsservices.com/services/ac-repair-nellore" />
         <meta property="og:image" content="https://nelloredoorstepservice.com/ac_service.png" />
         <meta property="og:type" content="website" />
 

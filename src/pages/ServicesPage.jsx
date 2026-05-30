@@ -11,7 +11,7 @@ const ServicesPage = ({ onSelectService }) => {
     "provider": {
       "@type": "LocalBusiness",
       "name": "Door Step Service",
-      "image": "https://nelloredoorstepservice.com/logo.png",
+      "image": "https://doorstepsservices.com/logo.png",
       "telephone": "+91-9701308392",
       "priceRange": "$$",
       "address": {
@@ -83,13 +83,13 @@ const ServicesPage = ({ onSelectService }) => {
           content="Choose from our premium doorstep appliance repair solutions in Nellore. Expert certified technicians for AC repair (starts ₹299), Refrigerator diagnostics (starts ₹399), and Washing Machine servicing (starts ₹349)." 
         />
         <meta name="keywords" content="ac repair service nellore, best ac repair in nellore, best refrigerator repair nellore, washing machine repair service nellore, appliance service catalog, door step service price" />
-        <link rel="canonical" href="https://nelloredoorstepservice.com/services" />
+        <link rel="canonical" href="https://doorstepsservices.com/services" />
         <meta name="robots" content="index, follow" />
 
         {/* OG Tags */}
         <meta property="og:title" content="Professional AC, Fridge & Washing Machine Repair Services in Nellore" />
         <meta property="og:description" content="Transparent pricing, certified local experts, and 100% genuine replacement parts in Nellore. AC starts ₹299, Fridge ₹399, Washing Machine ₹349." />
-        <meta property="og:url" content="https://nelloredoorstepservice.com/services" />
+        <meta property="og:url" content="https://doorstepsservices.com/services" />
         <meta property="og:type" content="website" />
 
         {/* Dynamic JSON-LD Schema Markup */}
