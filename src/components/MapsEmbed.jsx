@@ -4,7 +4,7 @@ import { MapPin, Phone, Clock } from 'lucide-react';
 
 const MapsEmbed = () => {
   return (
-    <section id="contact" className="relative py-24 bg-slate-50 text-slate-900 border-t border-b border-slate-100">
+    <section id="contact" className="relative pt-36 sm:pt-40 pb-24 bg-slate-50 text-slate-900 border-t border-b border-slate-100">
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         

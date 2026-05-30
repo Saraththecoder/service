@@ -1,14 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Phone, MessageCircle, Mail, MapPin, ShieldCheck, Heart, Sparkles } from 'lucide-react';
+import { Phone, MessageCircle, Mail, MapPin, Heart, Sparkles } from 'lucide-react';
 
-const Footer = ({ onBookClick, onPageChange }) => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const handleLinkClick = (e, view) => {
-    e.preventDefault();
-    onPageChange(view);
-  };
 
   return (
     <footer className="relative bg-white text-slate-500 overflow-hidden border-t border-slate-100">
@@ -99,45 +95,108 @@ const Footer = ({ onBookClick, onPageChange }) => {
             </motion.a>
 
             {/* Online Book trigger */}
-            <motion.button
-              onClick={onBookClick}
-              className="px-8 py-5 rounded-2xl text-sm font-extrabold text-slate-700 border border-slate-200 hover:border-[#1565FF]/30 hover:text-[#1565FF] bg-white flex items-center justify-center gap-2 transition-all duration-300 shadow-sm"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+            <Link
+              to="/book"
+              className="px-8 py-5 rounded-2xl text-sm font-extrabold text-slate-700 border border-slate-200 hover:border-[#1565FF]/30 hover:text-[#1565FF] bg-white flex flex-col items-center justify-center gap-1 transition-all duration-300 shadow-sm"
             >
-              <div className="flex flex-col items-center">
-                <span className="text-[9px] uppercase tracking-widest text-slate-400">Fast Booking</span>
-                <span className="font-extrabold">Book Online</span>
-              </div>
-            </motion.button>
+              <span className="text-[9px] uppercase tracking-widest text-slate-400">Fast Booking</span>
+              <span className="font-extrabold">Book Online</span>
+            </Link>
 
           </motion.div>
 
         </div>
       </div>
 
-      {/* -------------------- SECTION 7: GRAPHICAL ACCESSIBILITY FOOTER (ONLY ICONS CHOOSE) -------------------- */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10 w-full text-center bg-white">
-        <div className="flex flex-col items-center justify-center space-y-8">
+      {/* -------------------- SECTION 7: INTERN LINKING FOOTER SECTION -------------------- */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10 w-full bg-white text-left">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 border-b border-slate-100 pb-12">
           
-          {/* Logo Brand Header (Slate & Blue) */}
-          <div className="flex flex-col items-center gap-2">
-            <div className="relative flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-tr from-[#1565FF] to-[#4A90FF] p-[1px] shadow-sm">
-              <div className="w-full h-full bg-white rounded-xl flex items-center justify-center p-1.5">
-                <img src="/logo.png" alt="Door Step Service Logo" className="w-full h-full object-contain" />
+          {/* Brand details */}
+          <div className="md:col-span-5 space-y-4">
+            <div className="flex items-center gap-2">
+              <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-tr from-[#1565FF] to-[#4A90FF] p-[1px] shadow-sm">
+                <div className="w-full h-full bg-white rounded-xl flex items-center justify-center p-1.5">
+                  <img src="/logo.png" alt="Door Step Service Logo" className="w-full h-full object-contain" />
+                </div>
+              </div>
+              <div className="flex flex-col text-left">
+                <span className="font-heading font-extrabold text-lg tracking-wider text-slate-900">
+                  DOOR STEP
+                </span>
+                <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-[#4A90FF] -mt-1.5">
+                  SERVICE
+                </span>
               </div>
             </div>
-            <div className="flex flex-col items-center mt-2 text-center">
-              <span className="font-heading font-extrabold text-2xl tracking-widest text-slate-900">
-                DOOR STEP
-              </span>
-              <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-[#4A90FF] mt-0.5">
-                SERVICE NELLORE
-              </span>
-            </div>
+            <p className="text-slate-500 text-xs sm:text-sm leading-relaxed max-w-sm">
+              Door Step Service is Nellore's premium appliance repair and maintenance company. We specialize in fast Split AC, Fridge, and washing machine diagnostics right at your home.
+            </p>
           </div>
 
-          <p className="text-xs uppercase tracking-wider text-slate-400 font-extrabold">
+          {/* Service Links Cluster */}
+          <div className="md:col-span-3 space-y-4">
+            <h4 className="font-heading font-bold text-slate-800 text-sm uppercase tracking-wider">
+              Our Repair Services
+            </h4>
+            <ul className="space-y-2.5 text-xs sm:text-sm">
+              <li>
+                <Link to="/services/ac-repair-nellore" className="text-slate-500 hover:text-[#1565FF] transition-colors">
+                  AC Service & Repair
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/refrigerator-repair-nellore" className="text-slate-500 hover:text-[#1565FF] transition-colors">
+                  Refrigerator Service
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/washing-machine-repair-nellore" className="text-slate-500 hover:text-[#1565FF] transition-colors">
+                  Washing Machine Repair
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Quick Links Cluster */}
+          <div className="md:col-span-4 space-y-4">
+            <h4 className="font-heading font-bold text-slate-800 text-sm uppercase tracking-wider">
+              Quick Links
+            </h4>
+            <ul className="space-y-2.5 text-xs sm:text-sm grid grid-cols-2 gap-x-4">
+              <li>
+                <Link to="/" className="text-slate-500 hover:text-[#1565FF] transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="text-slate-500 hover:text-[#1565FF] transition-colors">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/book" className="text-slate-500 hover:text-[#1565FF] transition-colors">
+                  Book Appointment
+                </Link>
+              </li>
+              <li>
+                <Link to="/faqs" className="text-slate-500 hover:text-[#1565FF] transition-colors">
+                  FAQs
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-slate-500 hover:text-[#1565FF] transition-colors">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div className="flex flex-col items-center justify-center space-y-8 pt-10">
+          
+          <p className="text-[10px] uppercase tracking-wider text-slate-400 font-extrabold">
             TAP ICONS BELOW TO CONNECT WITH US DIRECTLY
           </p>
 
@@ -189,7 +248,7 @@ const Footer = ({ onBookClick, onPageChange }) => {
 
             {/* Email Support (Cyan) */}
             <motion.a
-              href="mailto:support@doorstepservice.in"
+              href="mailto:support@nelloredoorstepservice.com"
               className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-slate-50 border border-slate-200 hover:border-cyan-500 flex flex-col items-center justify-center text-cyan-600 hover:text-white hover:bg-cyan-600 transition-all duration-300 shadow-sm group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -202,7 +261,7 @@ const Footer = ({ onBookClick, onPageChange }) => {
 
           </div>
 
-          {/* Social Links (Facebook, Instagram, Youtube Inline SVGs styled for light theme) */}
+          {/* Social Links */}
           <div className="flex items-center justify-center gap-4 pt-4">
             <motion.a
               href="#"
@@ -246,7 +305,7 @@ const Footer = ({ onBookClick, onPageChange }) => {
   );
 };
 
-// Inline brand SVGs for rock-solid Vite builds
+// Inline brand SVGs for rock-solid builds
 const FacebookIcon = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={props.className}><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
 );

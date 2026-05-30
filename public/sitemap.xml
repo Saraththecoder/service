@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <url>
+    <loc>https://nelloredoorstepservice.com/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Service Catalog -->
+  <url>
+    <loc>https://nelloredoorstepservice.com/services</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- AC Repair Target Page -->
+  <url>
+    <loc>https://nelloredoorstepservice.com/services/ac-repair-nellore</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Refrigerator Repair Target Page -->
+  <url>
+    <loc>https://nelloredoorstepservice.com/services/refrigerator-repair-nellore</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Washing Machine Repair Target Page -->
+  <url>
+    <loc>https://nelloredoorstepservice.com/services/washing-machine-repair-nellore</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Book Appointment Page -->
+  <url>
+    <loc>https://nelloredoorstepservice.com/book</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- FAQs Page -->
+  <url>
+    <loc>https://nelloredoorstepservice.com/faqs</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Contact Us Page -->
+  <url>
+    <loc>https://nelloredoorstepservice.com/contact</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+</urlset>

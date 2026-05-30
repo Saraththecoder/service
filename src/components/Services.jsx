@@ -51,7 +51,7 @@ const Services = ({ onSelectService }) => {
   ];
 
   return (
-    <section id="services" className="relative py-28 bg-slate-50 text-[#0f172a]">
+    <section id="services" className="relative pt-36 sm:pt-40 pb-28 bg-slate-50 text-[#0f172a]">
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         

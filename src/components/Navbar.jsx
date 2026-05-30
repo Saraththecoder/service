@@ -1,23 +1,19 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone, ShieldCheck, Sparkles } from 'lucide-react';
 
-const Navbar = ({ currentPage, onPageChange }) => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const navLinks = [
-    { name: 'Home', view: 'home' },
-    { name: 'Services', view: 'services' },
-    { name: 'Book Service', view: 'book' },
-    { name: 'FAQs', view: 'faqs' },
-    { name: 'Contact Us', view: 'contact' },
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services' },
+    { name: 'Book Service', path: '/book' },
+    { name: 'FAQs', path: '/faqs' },
+    { name: 'Contact Us', path: '/contact' },
   ];
-
-  const handleLinkClick = (e, view) => {
-    e.preventDefault();
-    setIsOpen(false);
-    onPageChange(view);
-  };
 
   return (
     <>
@@ -33,9 +29,9 @@ const Navbar = ({ currentPage, onPageChange }) => {
           <div className="flex items-center justify-between h-16">
             
             {/* Logo Brand (Door Step Service) */}
-            <a
-              href="#home"
-              onClick={(e) => handleLinkClick(e, 'home')}
+            <Link
+              to="/"
+              onClick={() => setIsOpen(false)}
               className="flex items-center gap-2.5 group cursor-pointer"
             >
               <div className="relative flex items-center justify-center w-10 h-10 rounded-lg overflow-hidden border border-slate-200 bg-white p-[2px] shadow-sm group-hover:border-[#1565FF] transition-colors duration-300">
@@ -49,19 +45,18 @@ const Navbar = ({ currentPage, onPageChange }) => {
                   SERVICE
                 </span>
               </div>
-            </a>
+            </Link>
 
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center gap-8">
               <div className="flex gap-6">
                 {navLinks.map((link) => {
-                  const isActive = currentPage === link.view;
+                  const isActive = location.pathname === link.path;
                   
                   return (
-                    <a
+                    <Link
                       key={link.name}
-                      href={`#${link.view}`}
-                      onClick={(e) => handleLinkClick(e, link.view)}
+                      to={link.path}
                       className={`relative text-sm font-bold tracking-wide transition-colors py-2 px-1 ${
                         isActive ? 'text-[#1565FF]' : 'text-slate-500 hover:text-slate-950'
                       }`}
@@ -74,20 +69,19 @@ const Navbar = ({ currentPage, onPageChange }) => {
                           transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                         />
                       )}
-                    </a>
+                    </Link>
                   );
                 })}
               </div>
 
               {/* Book online CTA Button */}
-              <motion.button
-                onClick={() => onPageChange('book')}
-                className="relative px-6 py-2.5 rounded-xl text-sm font-extrabold text-white overflow-hidden shadow-sm shadow-[#1565FF]/20 active:scale-95 transition-transform"
-                whileHover={{ scale: 1.03 }}
+              <Link
+                to="/book"
+                className="relative px-6 py-2.5 rounded-xl text-sm font-extrabold text-white overflow-hidden shadow-sm shadow-[#1565FF]/20 active:scale-95 transition-transform flex items-center justify-center"
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-[#1565FF] to-[#4A90FF]" />
                 <span className="relative z-10">Book Support</span>
-              </motion.button>
+              </Link>
             </div>
 
             {/* Mobile menu button */}
@@ -95,6 +89,7 @@ const Navbar = ({ currentPage, onPageChange }) => {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="inline-flex items-center justify-center p-2 rounded-xl text-slate-500 hover:text-slate-950 hover:bg-slate-50 focus:outline-none border border-slate-200"
+                aria-label="Toggle Navigation Menu"
               >
                 {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
@@ -115,13 +110,13 @@ const Navbar = ({ currentPage, onPageChange }) => {
             >
               <div className="px-4 pt-2 pb-6 space-y-1">
                 {navLinks.map((link) => {
-                  const isActive = currentPage === link.view;
+                  const isActive = location.pathname === link.path;
                   
                   return (
-                    <a
+                    <Link
                       key={link.name}
-                      href={`#${link.view}`}
-                      onClick={(e) => handleLinkClick(e, link.view)}
+                      to={link.path}
+                      onClick={() => setIsOpen(false)}
                       className={`block px-4 py-3.5 rounded-xl text-base font-bold text-left transition-all duration-200 ${
                         isActive 
                           ? 'bg-blue-500/5 text-[#1565FF]' 
@@ -129,7 +124,7 @@ const Navbar = ({ currentPage, onPageChange }) => {
                       }`}
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   );
                 })}
                 
@@ -142,15 +137,13 @@ const Navbar = ({ currentPage, onPageChange }) => {
                     <Phone className="w-4.5 h-4.5 text-[#1565FF]" />
                     Call: 9701308392
                   </a>
-                  <button
-                    onClick={() => {
-                      setIsOpen(false);
-                      onPageChange('book');
-                    }}
-                    className="w-full py-3 rounded-xl bg-[#1565FF] hover:bg-[#4A90FF] text-white text-sm font-extrabold text-center shadow-md active:scale-95 transition-transform"
+                  <Link
+                    to="/book"
+                    onClick={() => setIsOpen(false)}
+                    className="w-full py-3 rounded-xl bg-[#1565FF] hover:bg-[#4A90FF] text-white text-sm font-extrabold text-center shadow-md active:scale-95 transition-transform flex items-center justify-center"
                   >
                     Book Appointment
-                  </button>
+                  </Link>
                 </div>
 
               </div>

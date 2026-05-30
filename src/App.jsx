@@ -1,149 +1,133 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import WhyChooseUs from './components/WhyChooseUs';
-import Process from './components/Process';
-import InquiryForm from './components/InquiryForm';
-import Testimonials from './components/Testimonials';
-import Faq from './components/Faq';
-import MapsEmbed from './components/MapsEmbed';
 import Footer from './components/Footer';
 import FloatingActions from './components/FloatingActions';
 
-function App() {
-  const [currentPage, setCurrentPage] = useState('home'); // 'home' | 'services' | 'book' | 'faqs' | 'contact'
-  const [selectedService, setSelectedService] = useState('');
+// Dynamic lazy-loaded routes for optimal LCP & Core Web Vitals
+const Home = lazy(() => import('./pages/Home'));
+const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const AcServicePage = lazy(() => import('./pages/AcServicePage'));
+const FridgeServicePage = lazy(() => import('./pages/FridgeServicePage'));
+const WasherServicePage = lazy(() => import('./pages/WasherServicePage'));
+const BookPage = lazy(() => import('./pages/BookPage'));
+const FaqPage = lazy(() => import('./pages/FaqPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
 
-  // Scroll to top automatically on page change
+// Premium, lightweight page skeleton spinner loader
+const PageLoader = () => (
+  <div className="min-h-[60vh] w-full flex flex-col items-center justify-center bg-white text-slate-900 gap-4">
+    <div className="relative flex items-center justify-center w-12 h-12">
+      <div className="absolute inset-0 rounded-full border-3 border-[#1565FF]/10 animate-pulse" />
+      <div className="absolute inset-0 rounded-full border-3 border-t-[#1565FF] animate-spin" style={{ animationDuration: '0.7s' }} />
+    </div>
+    <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#1565FF]/70 animate-pulse">
+      Loading Dispatcher...
+    </span>
+  </div>
+);
+
+// Automatic Scroll Restoration on Route Change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: 'instant'
     });
-  }, [currentPage]);
+  }, [pathname]);
 
-  // Hook called when user taps Book Now on Services page catalog
+  return null;
+};
+
+// Route wrapper logic for cross-component redirects (e.g. CTA selectors)
+const AppContent = () => {
+  const [selectedService, setSelectedService] = useState('');
+  const navigate = useNavigate();
+
   const handleSelectService = (serviceId) => {
     setSelectedService(serviceId);
-    setCurrentPage('book');
+    navigate('/book');
   };
 
   const handleResetSelectedService = () => {
     setSelectedService('');
   };
 
-  // Nav scroll/page jump helper
   const handleBookTrigger = () => {
-    setCurrentPage('book');
-  };
-
-  // Page switcher renderer with elegant Framer Motion transition envelopes
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'home':
-        return (
-          <motion.div
-            key="home-page"
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15 }}
-            transition={{ duration: 0.3, ease: 'easeOut' }}
-          >
-            {/* Elite Hero with Vetted Technician matching */}
-            <Hero onBookClick={handleBookTrigger} />
-            
-            {/* Core trust indicators */}
-            <WhyChooseUs />
-            
-            {/* Highlights horizontal timeline */}
-            <Process />
-          </motion.div>
-        );
-      case 'services':
-        return (
-          <motion.div
-            key="services-page"
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15 }}
-            transition={{ duration: 0.3, ease: 'easeOut' }}
-          >
-            {/* Detailed high-contrast catalog cards */}
-            <Services onSelectService={handleSelectService} />
-          </motion.div>
-        );
-      case 'book':
-        return (
-          <motion.div
-            key="book-page"
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15 }}
-            transition={{ duration: 0.3, ease: 'easeOut' }}
-          >
-            {/* Large Visual interactive booking form */}
-            <InquiryForm 
-              selectedService={selectedService} 
-              resetSelectedService={handleResetSelectedService} 
-            />
-          </motion.div>
-        );
-      case 'faqs':
-        return (
-          <motion.div
-            key="faqs-page"
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15 }}
-            transition={{ duration: 0.3, ease: 'easeOut' }}
-          >
-            {/* Accordion list */}
-            <Faq />
-            
-            {/* Verified slider reviews */}
-            <Testimonials />
-          </motion.div>
-        );
-      case 'contact':
-        return (
-          <motion.div
-            key="contact-page"
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15 }}
-            transition={{ duration: 0.3, ease: 'easeOut' }}
-          >
-            {/* Map coordinates and hub dispatch info */}
-            <MapsEmbed />
-          </motion.div>
-        );
-      default:
-        return null;
-    }
+    navigate('/book');
   };
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 selection:bg-blue-500/20 selection:text-blue-700">
       
-      {/* Sticky Frost Glass Navbar */}
-      <Navbar currentPage={currentPage} onPageChange={setCurrentPage} />
+      {/* Scroll Restoration */}
+      <ScrollToTop />
 
-      {/* Main Multi-Page Router Area with AnimatePresence */}
+      {/* Sticky Frost Glass Navbar */}
+      <Navbar />
+
+      {/* Main Multi-Page Router Area with Dynamic Suspense Loading */}
       <main className="w-full">
-        <AnimatePresence mode="wait">
-          {renderPage()}
-        </AnimatePresence>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route 
+              path="/" 
+              element={<Home onBookClick={handleBookTrigger} />} 
+            />
+            <Route 
+              path="/services" 
+              element={<ServicesPage onSelectService={handleSelectService} />} 
+            />
+            <Route 
+              path="/services/ac-repair-nellore" 
+              element={<AcServicePage />} 
+            />
+            <Route 
+              path="/services/refrigerator-repair-nellore" 
+              element={<FridgeServicePage />} 
+            />
+            <Route 
+              path="/services/washing-machine-repair-nellore" 
+              element={<WasherServicePage />} 
+            />
+            <Route 
+              path="/book" 
+              element={
+                <BookPage 
+                  selectedService={selectedService} 
+                  resetSelectedService={handleResetSelectedService} 
+                />
+              } 
+            />
+            <Route 
+              path="/faqs" 
+              element={<FaqPage />} 
+            />
+            <Route 
+              path="/contact" 
+              element={<ContactPage />} 
+            />
+          </Routes>
+        </Suspense>
       </main>
 
       {/* Premium Graphical Footer */}
-      <Footer onBookClick={handleBookTrigger} onPageChange={setCurrentPage} />
+      <Footer />
 
       {/* Floating Call & WhatsApp support links */}
       <FloatingActions />
 
     </div>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 
