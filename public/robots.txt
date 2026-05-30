@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://doorstepsservices.com/sitemap.xml
+Sitemap: https://oryontechnologies.net/sitemap.xml

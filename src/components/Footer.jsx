@@ -248,7 +248,7 @@ const Footer = () => {
 
             {/* Email Support (Cyan) */}
             <motion.a
-              href="mailto:support@doorstepsservices.com"
+              href="mailto:support@oryontechnologies.net"
               className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-slate-50 border border-slate-200 hover:border-cyan-500 flex flex-col items-center justify-center text-cyan-600 hover:text-white hover:bg-cyan-600 transition-all duration-300 shadow-sm group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
