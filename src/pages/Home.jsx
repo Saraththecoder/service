@@ -12,8 +12,8 @@ const Home = ({ onBookClick }) => {
     "@type": "Organization",
     "name": "Door Step Service",
     "alternateName": "Nellore Door Step Service",
-    "url": "https://oryontechnologies.net",
-    "logo": "https://oryontechnologies.net/logo.png",
+    "url": "https://doorstepsservices.com",
+    "logo": "https://doorstepsservices.com/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-9701308392",
@@ -34,22 +34,22 @@ const Home = ({ onBookClick }) => {
         name="description" 
         content="Looking for the best AC service in Nellore, or refrigerator and washing machine repair? Door Step Service provides certified expert field technicians, 100% genuine parts, same-day 90-min doorstep response, and a 30-day warranty." 
       />
-      <meta name="keywords" content="best ac service in nellore, best refrigerator service in nellore, best washing machine service in nellore, ac repair in nellore, fridge repair nellore, washing machine repair nellore, lg ac service nellore, samsung fridge service nellore, doorstep appliance repair nellore, local technician nellore, ac service near me, fridge repair near me, washing machine repair near me, doorstep service nellore, voltas ac repair nellore, ifb washing machine service nellore" />
-      <link rel="canonical" href="https://oryontechnologies.net/" />
+      <meta name="keywords" content="best ac service in nellore, best refrigerator service in nellore, best washing machine service in nellore, best refrigrator service in nellore, best washning machine service in nellore, ac repair in nellore, ac service nellore, ac technician in nellore, fridge repair nellore, refrigerator repair in nellore, washing machine repair nellore, washing machine service in nellore, lg washing machine service nellore, ifb washing machine service nellore, samsung fridge service nellore, doorstep appliance repair nellore, local technician nellore, ac service near me, fridge repair near me, washing machine repair near me, doorstep service nellore, voltas ac repair nellore, ac gas filling nellore, fridge gas filling nellore, appliance repair near me nellore, door step services nellore, expert ac repair nellore" />
+      <link rel="canonical" href="https://doorstepsservices.com/" />
       <meta name="robots" content="index, follow" />
       
       {/* Open Graph Tags */}
       <meta property="og:title" content="Best Doorstep Appliance Repair Service in Nellore | Door Step Service" />
       <meta property="og:description" content="Certified AC, Refrigerator, and Washing Machine repair in Nellore. Fast same-day doorstep diagnostics, genuine parts, and 30-day work warranty." />
-      <meta property="og:url" content="https://oryontechnologies.net/" />
-      <meta property="og:image" content="https://oryontechnologies.net/logo.png" />
+      <meta property="og:url" content="https://doorstepsservices.com/" />
+      <meta property="og:image" content="https://doorstepsservices.com/logo.png" />
       <meta property="og:type" content="website" />
 
       {/* Twitter Cards */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Best Doorstep Appliance Repair Service in Nellore | Door Step Service" />
       <meta name="twitter:description" content="Certified AC, Refrigerator, and Washing Machine repair in Nellore. Same-day doorstep diagnostics, genuine parts, and 30-day warranty." />
-      <meta name="twitter:image" content="https://oryontechnologies.net/logo.png" />
+      <meta name="twitter:image" content="https://doorstepsservices.com/logo.png" />
 
       {/* Dynamic JSON-LD Schema Markup */}
       <script type="application/ld+json">

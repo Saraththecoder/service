@@ -14,19 +14,19 @@ const FridgeServicePage = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://oryontechnologies.net/"
+          "item": "https://doorstepsservices.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Services",
-          "item": "https://oryontechnologies.net/services"
+          "item": "https://doorstepsservices.com/services"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Refrigerator Repair",
-          "item": "https://oryontechnologies.net/services/refrigerator-repair-nellore"
+          "item": "https://doorstepsservices.com/services/refrigerator-repair-nellore"
         }
       ]
     },
@@ -66,15 +66,15 @@ const FridgeServicePage = () => {
         name="description" 
         content="Get the best refrigerator service in Nellore. Expert doorstep fridge repair for Single door, Double door, and Side-by-side units. Low cooling, compressor replacements & gas charging. Starts ₹399." 
       />
-      <meta name="keywords" content="best refrigerator service in nellore, fridge repair nellore, lg refrigerator repair nellore, samsung fridge service nellore, whirlpool fridge service nellore, godrej refrigerator repair nellore, bosch fridge service nellore, haier refrigerator repair nellore, refrigerator service near me, fridge repair near me, refrigerator technician nellore, fridge gas filling nellore, fridge gas charging, doorstep refrigerator repair, single door fridge repair nellore, double door refrigerator repair nellore" />
-      <link rel="canonical" href="https://oryontechnologies.net/services/refrigerator-repair-nellore" />
+      <meta name="keywords" content="best ac service in nellore, best refrigerator service in nellore, best washing machine service in nellore, best refrigrator service in nellore, best washning machine service in nellore, fridge repair nellore, refrigerator repair nellore, lg refrigerator repair nellore, samsung fridge service nellore, whirlpool fridge service nellore, godrej refrigerator repair nellore, bosch fridge service nellore, haier refrigerator repair nellore, refrigerator service near me, fridge repair near me, refrigerator technician nellore, fridge gas filling nellore, fridge gas charging, doorstep refrigerator repair, single door fridge repair nellore, double door refrigerator repair nellore, side by side refrigerator repair nellore, fridge repair doorstep nellore" />
+      <link rel="canonical" href="https://doorstepsservices.com/services/refrigerator-repair-nellore" />
       <meta name="robots" content="index, follow" />
 
       {/* OG Tags */}
       <meta property="og:title" content="Best Refrigerator Service & Repair in Nellore | Door Step Service" />
       <meta property="og:description" content="No cooling or noise issues? Get same-day doorstep refrigerator repair in Nellore by certified field mechanics. Original compressors, sensors, gas refilling. Starts ₹399." />
-      <meta property="og:url" content="https://oryontechnologies.net/services/refrigerator-repair-nellore" />
-      <meta property="og:image" content="https://oryontechnologies.net/refrigerator_service.png" />
+      <meta property="og:url" content="https://doorstepsservices.com/services/refrigerator-repair-nellore" />
+      <meta property="og:image" content="https://doorstepsservices.com/refrigerator_service.png" />
       <meta property="og:type" content="website" />
 
       {/* Dynamic Schema */}

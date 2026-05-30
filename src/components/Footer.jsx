@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Phone, MessageCircle, Mail, MapPin, Heart, Sparkles } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Heart, Sparkles } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -201,7 +201,7 @@ const Footer = () => {
           </p>
 
           {/* --- HIGH ACCESSIBILITY ACTION ICON GRID (ONLY ICONS CHOOSE) --- */}
-          <div className="grid grid-cols-4 gap-4 sm:gap-6 max-w-md w-full justify-center">
+          <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-sm w-full justify-center">
             
             {/* Phone Call (Blue) */}
             <motion.a
@@ -243,19 +243,6 @@ const Footer = () => {
               <MapPin className="w-6 h-6 sm:w-7 sm:h-7 group-hover:scale-110 transition-transform" />
               <span className="text-[8px] sm:text-[9px] uppercase font-bold tracking-wider mt-1.5 text-slate-400 group-hover:text-red-100">
                 Location
-              </span>
-            </motion.a>
-
-            {/* Email Support (Cyan) */}
-            <motion.a
-              href="mailto:support@oryontechnologies.net"
-              className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-slate-50 border border-slate-200 hover:border-cyan-500 flex flex-col items-center justify-center text-cyan-600 hover:text-white hover:bg-cyan-600 transition-all duration-300 shadow-sm group"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Mail className="w-6 h-6 sm:w-7 sm:h-7 group-hover:scale-110 transition-transform" />
-              <span className="text-[8px] sm:text-[9px] uppercase font-bold tracking-wider mt-1.5 text-slate-400 group-hover:text-cyan-100">
-                Email
               </span>
             </motion.a>
 

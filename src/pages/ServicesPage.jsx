@@ -10,7 +10,7 @@ const ServicesPage = ({ onSelectService }) => {
     "provider": {
       "@type": "LocalBusiness",
       "name": "Door Step Service",
-      "image": "https://oryontechnologies.net/logo.png",
+      "image": "https://doorstepsservices.com/logo.png",
       "telephone": "+91-9701308392",
       "priceRange": "$$",
       "address": {
@@ -80,14 +80,14 @@ const ServicesPage = ({ onSelectService }) => {
         name="description" 
         content="Choose from our premium doorstep appliance repair solutions in Nellore. Expert certified technicians for AC repair (starts ₹299), Refrigerator diagnostics (starts ₹399), and Washing Machine servicing (starts ₹349)." 
       />
-      <meta name="keywords" content="best ac service in nellore, ac repair service nellore, best ac repair in nellore, best refrigerator repair nellore, washing machine repair service nellore, lg ac service nellore, samsung fridge service nellore, ifb washing machine service nellore, appliance service catalog, door step service price, local technician nellore" />
-      <link rel="canonical" href="https://oryontechnologies.net/services" />
+      <meta name="keywords" content="best ac service in nellore, best refrigerator service in nellore, best washing machine service in nellore, best refrigrator service in nellore, best washning machine service in nellore, ac repair service nellore, best ac repair in nellore, best refrigerator repair nellore, washing machine repair service nellore, lg ac service nellore, samsung fridge service nellore, ifb washing machine service nellore, appliance service catalog nellore, door step service price nellore, local technician nellore, home appliance service nellore, professional ac repair nellore, washing machine mechanic nellore, single door fridge repair nellore" />
+      <link rel="canonical" href="https://doorstepsservices.com/services" />
       <meta name="robots" content="index, follow" />
 
       {/* OG Tags */}
       <meta property="og:title" content="Professional AC, Fridge & Washing Machine Repair Services in Nellore" />
       <meta property="og:description" content="Transparent pricing, certified local experts, and 100% genuine replacement parts in Nellore. AC starts ₹299, Fridge ₹399, Washing Machine ₹349." />
-      <meta property="og:url" content="https://oryontechnologies.net/services" />
+      <meta property="og:url" content="https://doorstepsservices.com/services" />
       <meta property="og:type" content="website" />
 
       {/* Dynamic JSON-LD Schema Markup */}

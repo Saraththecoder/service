@@ -14,19 +14,19 @@ const WasherServicePage = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://oryontechnologies.net/"
+          "item": "https://doorstepsservices.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Services",
-          "item": "https://oryontechnologies.net/services"
+          "item": "https://doorstepsservices.com/services"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Washing Machine Repair",
-          "item": "https://oryontechnologies.net/services/washing-machine-repair-nellore"
+          "item": "https://doorstepsservices.com/services/washing-machine-repair-nellore"
         }
       ]
     },
@@ -66,15 +66,15 @@ const WasherServicePage = () => {
         name="description" 
         content="Get the best washing machine service in Nellore. Fast doorstep repair for Front load, Top load, and Semi-automatic washers. Drum repairs, extreme noise fixes, and drain pumps. Starts ₹349." 
       />
-      <meta name="keywords" content="best washing machine service in nellore, washing machine repair in nellore, lg washing machine service nellore, samsung washer repair nellore, ifb washing machine service nellore, bosch washing machine repair nellore, whirlpool washer service nellore, washing machine service near me, washing machine repair near me, washing machine technician nellore, doorstep washing machine repair, washer drum repair nellore, front load washing machine repair nellore, top load washing machine repair nellore" />
-      <link rel="canonical" href="https://oryontechnologies.net/services/washing-machine-repair-nellore" />
+      <meta name="keywords" content="best ac service in nellore, best refrigerator service in nellore, best washing machine service in nellore, best refrigrator service in nellore, best washning machine service in nellore, washing machine repair in nellore, washing machine repair nellore, lg washing machine service nellore, samsung washer repair nellore, ifb washing machine service nellore, bosch washing machine repair nellore, whirlpool washer service nellore, washing machine service near me, washing machine repair near me, washing machine technician nellore, doorstep washing machine repair, washer drum repair nellore, front load washing machine repair nellore, top load washing machine repair nellore, washing machine mechanic nellore, automatic washing machine repair nellore" />
+      <link rel="canonical" href="https://doorstepsservices.com/services/washing-machine-repair-nellore" />
       <meta name="robots" content="index, follow" />
 
       {/* OG Tags */}
       <meta property="og:title" content="Best Washing Machine Service & Repair in Nellore | Door Step Service" />
       <meta property="og:description" content="Spin cycle issues or extreme noise? Get same-day doorstep washing machine repair in Nellore by certified field mechanics. Original motors, belts, pumps, suspension. Starts ₹349." />
-      <meta property="og:url" content="https://oryontechnologies.net/services/washing-machine-repair-nellore" />
-      <meta property="og:image" content="https://oryontechnologies.net/washing_machine_service.png" />
+      <meta property="og:url" content="https://doorstepsservices.com/services/washing-machine-repair-nellore" />
+      <meta property="og:image" content="https://doorstepsservices.com/washing_machine_service.png" />
       <meta property="og:type" content="website" />
 
       {/* Dynamic Schema */}
