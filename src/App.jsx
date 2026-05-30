@@ -1,5 +1,5 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FloatingActions from './components/FloatingActions';
@@ -108,6 +108,11 @@ const AppContent = () => {
             <Route 
               path="/contact" 
               element={<ContactPage />} 
+            />
+            {/* Catch-all route to redirect unmatched paths to Home page */}
+            <Route 
+              path="*" 
+              element={<Navigate to="/" replace />} 
             />
           </Routes>
         </Suspense>
