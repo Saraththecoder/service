@@ -66,7 +66,7 @@ const WasherServicePage = () => {
         name="description" 
         content="Get the best washing machine service in Nellore. Fast doorstep repair for Front load, Top load, and Semi-automatic washers. Drum repairs, extreme noise fixes, and drain pumps. Starts ₹349." 
       />
-      <meta name="keywords" content="best washing machine service, washing machine repair in nellore, lg washing machine service nellore, samsung washer repair nellore, washing machine technician, drum repair" />
+      <meta name="keywords" content="best washing machine service in nellore, washing machine repair in nellore, lg washing machine service nellore, samsung washer repair nellore, ifb washing machine service nellore, bosch washing machine repair nellore, whirlpool washer service nellore, washing machine service near me, washing machine repair near me, washing machine technician nellore, doorstep washing machine repair, washer drum repair nellore, front load washing machine repair nellore, top load washing machine repair nellore" />
       <link rel="canonical" href="https://doorstepsservices.com/services/washing-machine-repair-nellore" />
       <meta name="robots" content="index, follow" />
 

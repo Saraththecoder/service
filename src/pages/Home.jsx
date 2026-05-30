@@ -34,7 +34,7 @@ const Home = ({ onBookClick }) => {
         name="description" 
         content="Looking for the best AC service in Nellore, or refrigerator and washing machine repair? Door Step Service provides certified expert field technicians, 100% genuine parts, same-day 90-min doorstep response, and a 30-day warranty." 
       />
-      <meta name="keywords" content="best ac service in nellore, best refrigerator service in nellore, best washing machine service in nellore, ac service, fridge repair nellore, washing machine repair nellore, doorstep appliance repair, local technician nellore" />
+      <meta name="keywords" content="best ac service in nellore, best refrigerator service in nellore, best washing machine service in nellore, ac repair in nellore, fridge repair nellore, washing machine repair nellore, lg ac service nellore, samsung fridge service nellore, doorstep appliance repair nellore, local technician nellore, ac service near me, fridge repair near me, washing machine repair near me, doorstep service nellore, voltas ac repair nellore, ifb washing machine service nellore" />
       <link rel="canonical" href="https://doorstepsservices.com/" />
       <meta name="robots" content="index, follow" />
       

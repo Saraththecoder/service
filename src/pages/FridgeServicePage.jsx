@@ -66,7 +66,7 @@ const FridgeServicePage = () => {
         name="description" 
         content="Get the best refrigerator service in Nellore. Expert doorstep fridge repair for Single door, Double door, and Side-by-side units. Low cooling, compressor replacements & gas charging. Starts ₹399." 
       />
-      <meta name="keywords" content="best refrigerator service in nellore, fridge repair nellore, lg refrigerator repair nellore, samsung fridge service nellore, refrigerator technician nellore, fridge gas filling" />
+      <meta name="keywords" content="best refrigerator service in nellore, fridge repair nellore, lg refrigerator repair nellore, samsung fridge service nellore, whirlpool fridge service nellore, godrej refrigerator repair nellore, bosch fridge service nellore, haier refrigerator repair nellore, refrigerator service near me, fridge repair near me, refrigerator technician nellore, fridge gas filling nellore, fridge gas charging, doorstep refrigerator repair, single door fridge repair nellore, double door refrigerator repair nellore" />
       <link rel="canonical" href="https://doorstepsservices.com/services/refrigerator-repair-nellore" />
       <meta name="robots" content="index, follow" />
 

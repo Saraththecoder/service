@@ -80,7 +80,7 @@ const ServicesPage = ({ onSelectService }) => {
         name="description" 
         content="Choose from our premium doorstep appliance repair solutions in Nellore. Expert certified technicians for AC repair (starts ₹299), Refrigerator diagnostics (starts ₹399), and Washing Machine servicing (starts ₹349)." 
       />
-      <meta name="keywords" content="ac repair service nellore, best ac repair in nellore, best refrigerator repair nellore, washing machine repair service nellore, appliance service catalog, door step service price" />
+      <meta name="keywords" content="best ac service in nellore, ac repair service nellore, best ac repair in nellore, best refrigerator repair nellore, washing machine repair service nellore, lg ac service nellore, samsung fridge service nellore, ifb washing machine service nellore, appliance service catalog, door step service price, local technician nellore" />
       <link rel="canonical" href="https://doorstepsservices.com/services" />
       <meta name="robots" content="index, follow" />
 

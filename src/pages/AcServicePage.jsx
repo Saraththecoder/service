@@ -66,7 +66,7 @@ const AcServicePage = () => {
         name="description" 
         content="Get the best AC service in Nellore. Fast doorstep Split/Window air conditioner repair, deep foam jet cleaning, compressor replacement, gas charging & PCB servicing. Starts at ₹299." 
       />
-      <meta name="keywords" content="best ac service in nellore, ac repair in nellore, ac gas filling nellore, split ac installation nellore, window ac service nellore, ac technician nellore" />
+      <meta name="keywords" content="best ac service in nellore, ac repair in nellore, lg ac service nellore, samsung ac repair nellore, voltas ac service nellore, daikin ac service nellore, blue star ac service nellore, lloyd ac repair nellore, carrier ac service nellore, panasonic ac repair nellore, ac service near me, ac repair near me, best ac service near me, ac technician nellore, ac gas filling nellore, ac gas refilling nellore, split ac installation nellore, window ac service nellore, ac mechanic in nellore, doorstep ac repair nellore, ac cleaning nellore" />
       <link rel="canonical" href="https://doorstepsservices.com/services/ac-repair-nellore" />
       <meta name="robots" content="index, follow" />
 
